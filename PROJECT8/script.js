@@ -2,7 +2,6 @@ function play(playerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-    // Determine the winner
     let result;
     if (playerChoice === computerChoice) {
         result = "It's a tie!";
@@ -16,11 +15,9 @@ function play(playerChoice) {
         result = 'You lose!';
     }
 
-    // Display the result
     const resultElement = document.getElementById('result');
     resultElement.textContent = `Computer chose ${computerChoice}. ${result}`;
 
-    // Trigger hand animation
     const playerHand = document.querySelector('.choice span.hand');
     playerHand.classList.add('animate');
 
