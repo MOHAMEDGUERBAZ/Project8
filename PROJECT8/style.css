@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#game {
+    margin-top: 20px;
+}
+
+#result {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.choice:hover {
+    background-color: #2980b9;
+}
+
+.hand {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    animation: handAnimation 0.5s ease-in-out;
+}
+
+@keyframes handAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
